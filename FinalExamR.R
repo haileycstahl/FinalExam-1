@@ -61,6 +61,7 @@ test_high <- as.factor(test_high)
 #create the confusion matrix with the prediction 
 #********************* CREATE & DISPLAY THE CONFUSION MATRIX ******************
 
+cm<- confusionMatrix(data=tree_pred, reference = test_high)
 cm
 
 #******************************* PRUNE & PLOT THE TREE *******************************
